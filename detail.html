@@ -9,13 +9,27 @@
 <body>
     <div class="main">
         <div class="header">
-            <img src="assests/images/logo.png" alt="logo" heigth="100px" width="150px">
-            <a href="login.html" target="_blank">Login</a>
+            <a href="index.html"><img src="assests/images/logo.png" alt="logo" heigth="100px" width="150px"></a>
+            <a href="login.html">Login</a>
         </div>
         <div class="content">
             
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel"><br>
-            <a href="payment.html">Book Now</a>
+            
+            <form action="payment.html" method="get">
+                <label for="adults">Adults:</label>
+                <input type="number" min="1" name="adults" id="adults" required><br>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required><br>
+                <label for="fromDate">From Date:</label>
+                <input type="date" name="fromDate" id="fromDate" required><br>
+                <label for="toDate">To Date:</label>
+                <input type="date" name="toDate" id="toDate" required><br>
+                <label for="total">Total:</label>
+                <input type="text" name="total" id="total" readonly><br>
+                <input type="submit" value="Book Now">
+            </form>
+
             <h2>Radisson Blu Hotel</h2>
             <p>Rating</p>
             <p>5 Star</p>
@@ -35,7 +49,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, iusto sit numquam inventore est doloremque neque nesciunt alias nam, nobis sunt officiis asperiores qui sed architecto debitis consequatur quae sapiente.</p>
         </div>
         <div class="footer">
-            <a href="contact.html" target="_blank">Contact Us</a><br>
+            <a href="contact.html">Contact Us</a><br>
             <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
             <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
             <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a><br>
