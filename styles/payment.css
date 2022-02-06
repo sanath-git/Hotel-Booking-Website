@@ -1,20 +1,46 @@
+html {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  background-color: #e0e0e0;
 }
 .main {
   width: 100%;
   height: 100%;
 }
+header {
+  background-color: rosybrown;
+}
 header img {
   height: 60px;
   width: 60px;
 }
-#hotelDetails > img {
+#hotel-details > img {
   height: 500px;
   width: 500px;
+}
+#hotel-details {
+  background-color: rgb(132, 136, 139);
+  width: 50%;
+  height: 20%;
+  margin: 2% auto;
+}
+#payment-details {
+  margin: 2%;
+}
+#bill-amount {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1% 2%;
+}
+
+footer {
+  background-color: rosybrown;
 }
 footer img {
   height: 20px;

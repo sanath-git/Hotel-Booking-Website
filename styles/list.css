@@ -1,12 +1,20 @@
+html {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  background-color: #e0e0e0;
 }
 .main {
   width: 100%;
   height: 100%;
+}
+header {
+  background-color: rosybrown;
 }
 header img {
   height: 60px;
@@ -16,6 +24,16 @@ header img {
 #list-view img {
   height: 200px;
   width: 250px;
+}
+
+.hotels {
+  margin: 2%;
+  background-color: rgb(132, 136, 139);
+  width: 40%;
+}
+
+footer {
+  background-color: rosybrown;
 }
 footer img {
   height: 20px;
