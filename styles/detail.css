@@ -1,28 +1,3 @@
-html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #e0e0e0;
-}
-.main {
-  width: 100%;
-  height: 100%;
-}
-header {
-  background-color: rosybrown;
-}
-
-header img {
-  height: 60px;
-  width: 60px;
-}
-
 #content > img {
   height: 500px;
   width: 500px;
@@ -39,11 +14,4 @@ header img {
 
 #hotel-description {
   margin: 1% 4% 2% 4%;
-}
-footer {
-  background-color: rosybrown;
-}
-footer img {
-  height: 20px;
-  width: 22px;
 }

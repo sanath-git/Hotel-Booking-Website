@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index.css">
+    
 </head>
 <body>
     <div class="main">
         <header>
             <img src="assests/images/logo.png" alt="logo">
-            <a href="login.html">Login</a>
+            <a href="login.html" id="login">Login</a>
         </header>
         <section id="content">
             <article id="search-bar">
-                <form action="">
-                    <input type="text" name="searchBar" placeholder="City">
-                </form>
+                
+                <input type="text" name="searchBar" placeholder="City">
+                
             </article>
             <section id="city-cards">
                 <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="Delhi"/></a>
@@ -26,17 +29,20 @@
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="Kolkata"/><br>
                 
             </section>
-            <article id="view-more">
-                <a href="#">View more &gt&gt</a>
-            </article>
+            
+            <a href="#" id="view-more">View more &gt&gt</a>
+            
 
         </section>
         <footer>
-            <a href="contact.html">Contact Us</a><br>
-            <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"></a>
-            <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter"></a><br>
-            <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
+            <a href="contact.html" id="contact-us">Contact Us</a><br>
+            <article id="social-media">
+                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter"></a>
+                
+            </article>
+            <p id="copy-right">&copy; 2020 ROOM SEARCH PVT.LTD</p>
 
         </footer>
     </div>
