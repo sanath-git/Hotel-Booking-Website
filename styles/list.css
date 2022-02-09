@@ -13,6 +13,13 @@
 li + li {
   margin-left: 40px;
 }
+#list-view {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 6%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
 
 #list-view img {
   height: 200px;
@@ -21,15 +28,27 @@ li + li {
 
 .hotels {
   margin: 2%;
-  background-color: rgb(132, 136, 139);
-  width: 40%;
+
+  background-color: lightgrey;
+  width: 100%;
   color: black;
-  display: inline-block;
+  display: flex;
 }
+#clickableImage {
+  display: flex;
+}
+
 .hotels a {
   text-decoration: none;
   color: black;
 }
+.hotels > a {
+  width: 100%;
+}
+.hotel-desc {
+  margin-left: 4%;
+}
+
 #map-view {
   display: none;
 }

@@ -1,5 +1,7 @@
 #content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
 }
 #search-bar {
   background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
@@ -8,8 +10,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #search-bar > input {
   padding: 10px;
@@ -18,17 +21,73 @@
   background-color: #f1f1f1;
   font-size: 16px;
   width: 33%;
-  margin-top: 160px;
+}
+#search-bar > input:focus {
+  outline: none;
 }
 #city-cards {
-  margin-left: 14%;
-  margin-right: 14%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#list-page {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding: 0;
+}
+#city-cards article {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
 }
 
 #city-cards img {
-  padding: 4%;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
+
+.city-text {
+  position: absolute;
+  text-align: center;
+  color: #f1f1f1;
+  z-index: 100;
+  display: none;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
   border-radius: 25%;
 }
+#delhi-overlay {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.city:hover > a .city-text {
+  display: block;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.city:hover .city-text {
+  display: block;
+}
+.city-text:hover ~ .overlay,
+.city-text:hover ~ a .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 #content img {
   height: 150px;
   width: 150px;
@@ -36,4 +95,8 @@
 #view-more {
   color: black;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 3%;
 }

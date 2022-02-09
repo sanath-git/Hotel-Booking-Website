@@ -1,22 +1,57 @@
-#hotel-details > img {
-  height: 500px;
-  width: 500px;
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 7%;
+}
+#hotel-details img {
+  max-height: 300px;
+  max-width: 270px;
 }
 #hotel-details {
-  background-color: rgb(132, 136, 139);
+  display: flex;
+}
+#hotel-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4%;
+}
+#hotel-details {
   width: 50%;
   height: 20%;
   margin: 2% auto;
+  padding-right: 50px;
+  background-color: rgb(132, 136, 139);
 }
 #payment-details {
   margin: 2%;
-}
-#bill-amount {
+  display: flex;
+  justify-content: space-around;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 1% 2%;
+  background-color: rosybrown;
+}
+#payment-details strong {
+  font-family: cursive;
+}
+#customer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#bill-amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#pay-now-section {
+  display: flex;
+  align-items: center;
 }
 #paynow {
   text-decoration: none;
   color: black;
+  font-family: "Ubuntu", sans-serif;
 }
