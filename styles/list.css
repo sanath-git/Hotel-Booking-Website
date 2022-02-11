@@ -1,15 +1,34 @@
-#list-map-li {
-  text-align: center;
-}
-#list-map-view li {
-  display: inline;
-  text-align: center;
-}
-#list-map-view a {
-  text-decoration: none;
-  font-weight: bold;
+.hotels a:hover {
   color: black;
 }
+
+/* overriding bootstrap button styles */
+#list-and-map .btn-outline-primary {
+  border: none;
+  color: black;
+}
+#list-and-map .btn-outline-primary:hover {
+  color: black;
+  background-color: transparent;
+}
+#list-and-map .btn-outline-primary:focus {
+  box-shadow: none;
+  color: black;
+}
+#list-and-map .btn-outline-primary:active {
+  box-shadow: none;
+  color: black;
+}
+#list-and-map .btn-check:checked + .btn-outline-primary {
+  box-shadow: none;
+  color: black;
+  background-color: #0d6efd;
+}
+/* end of overriding bootstrap button styles */
+#list-and-map {
+  text-align: center;
+}
+
 li + li {
   margin-left: 40px;
 }
@@ -17,8 +36,10 @@ li + li {
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 6%;
+  padding-top: 4%;
   margin-left: 4%;
   margin-right: 4%;
+  margin-bottom: 6%;
 }
 
 #list-view img {
@@ -47,8 +68,25 @@ li + li {
 }
 .hotel-desc {
   margin-left: 4%;
+  text-align: left;
+  margin-top: 4%;
+}
+.hotels:hover {
+  background-color: rosybrown;
 }
 
-#map-view {
+/* making list and map view visible when checked */
+#map-view-button:checked ~ #map-view {
+  display: grid;
+}
+#map-view-button:checked ~ #list-view {
   display: none;
 }
+
+#list-view-button:checked ~ #list-view {
+  display: grid;
+}
+#list-view-button:checked ~ #map-view {
+  display: none;
+}
+/* end of  making list and map view visible on click*/
