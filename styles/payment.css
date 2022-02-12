@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 #hotel-details img {
   max-height: 300px;
@@ -18,10 +19,9 @@
   padding-left: 4%;
 }
 #hotel-details {
-  width: 50%;
   height: 20%;
   margin: 2% auto;
-  padding-right: 50px;
+
   background-color: rgb(132, 136, 139);
 }
 #payment-details {
@@ -53,4 +53,40 @@
   text-decoration: none;
   color: white;
   font-family: "Ubuntu", sans-serif;
+}
+
+/* media queries */
+/* @media only screen and (min-width: 576px) and (max-width: 768px) {
+  
+} */
+@media only screen and (max-width: 576px) {
+  #content {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  #payment-details {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #payment-details,
+  #customer-details,
+  #bill-amount {
+    display: flex;
+    flex-direction: column;
+  }
+  #paynow-button {
+    margin: 0 auto;
+  }
+  #hotel-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #hotel-image > img {
+    margin: 0 auto;
+  }
+  #hotel-desc {
+    text-align: center;
+  }
 }
