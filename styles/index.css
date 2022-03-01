@@ -31,6 +31,9 @@
 #main-content {
   margin-top: 5%;
 }
+/* #second-row {
+  display: none;
+} */
 .city-cards {
   width: 100%;
   display: flex;
@@ -103,7 +106,7 @@
   height: 150px;
   width: 150px;
 }
-#view-more {
+#view-more-section {
   color: white;
   text-decoration: none;
   display: flex;
@@ -120,8 +123,18 @@
     margin-bottom: 8%;
   }
 }
+@media only screen and (min-width: 768px) {
+  #second-row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .city-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #second-row {
     display: grid;
     grid-template-columns: auto auto;
   }
@@ -129,6 +142,10 @@
 
 @media only screen and (max-width: 576px) {
   .city-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  #second-row {
     display: flex;
     flex-direction: column;
   }
