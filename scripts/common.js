@@ -39,7 +39,7 @@ var loginModal = `<div class="modal fade" id="login-modal" tabindex="-1" aria-la
                           
                       </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary" id="login-button" onclick="login()">Login</button>
+                            <button type="button" class="btn btn-primary" id="login-button" onclick="login()" data-bs-dismiss="modal">Login</button>
                         </div>
                     </form>
                 </div>

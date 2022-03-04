@@ -11,28 +11,22 @@
 }
 
 #hotel-image {
-  width: 70%;
-  max-height: 400px;
-}
-
-#image1,
-#image2,
-#image3 {
-  width: 70%;
-  align-items: center;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 100%;
+  /* max-height: 400px; */
+  padding: 10px;
+  border-right: 1px solid black;
 }
 
 #hotel-image img {
   max-height: 350px;
   margin-top: 2%;
   margin-bottom: 2%;
+
+  align-items: center;
 }
 
 #payment-form {
-  border-left: 1px solid black;
-  width: 30%;
+  width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -73,7 +67,7 @@
 }
 .arrow {
   font-size: 55px;
-  color: rosybrown;
+  color: black;
 }
 
 /* media queries */

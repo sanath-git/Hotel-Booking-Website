@@ -72,19 +72,31 @@
 .overlay {
   width: 150px;
   height: 150px;
-  position: absolute;
+  /* position: absolute; */
   border-radius: 25%;
-}
-#list-page {
-  margin: 0 auto;
-}
-#delhi-overlay {
   height: 150px;
   width: 150px;
   position: absolute;
   top: 0;
   left: 0;
 }
+#list-page {
+  margin: 0 auto;
+}
+/* #delhi-overlay {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#hyderabad-overlay {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
 .city:hover > a .city-text {
   display: block;
 }

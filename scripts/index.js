@@ -1,3 +1,5 @@
+// toggle between view more and view less
+
 var checkViewMoreViewLess = true;
 var secondDiv = document.getElementsByClassName("city-cards")[1];
 secondDiv.style.display = "none";

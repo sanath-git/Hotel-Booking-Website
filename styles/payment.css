@@ -11,6 +11,7 @@
 }
 #hotel-details {
   display: flex;
+  width: 50%;
 }
 #hotel-desc {
   display: flex;
@@ -23,6 +24,9 @@
   margin: 2% auto;
 
   background-color: rgb(132, 136, 139);
+}
+#ranking {
+  font-weight: bold;
 }
 #payment-details {
   margin: 2%;
@@ -83,7 +87,7 @@
     align-items: center;
     width: 100%;
   }
-  #hotel-image > img {
+  #hotel-image {
     margin: 0 auto;
   }
   #hotel-desc {
