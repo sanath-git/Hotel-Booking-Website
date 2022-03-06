@@ -1,3 +1,6 @@
+#main {
+  display: none;
+}
 #content {
   display: flex;
   flex-direction: column;

@@ -45,6 +45,8 @@ xhr.addEventListener("readystatechange", function () {
     const jsonData = JSON.parse(this.responseText);
     console.log(jsonData.data);
     getAndSetHotelDetails(jsonData.data[0]);
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("main").style.display = "block";
   }
 });
 
@@ -55,7 +57,7 @@ xhr.open(
 xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
 xhr.setRequestHeader(
   "x-rapidapi-key",
-  "d32e5d3f47msh75c155f49e4e268p198859jsndb831324b05b"
+  "9fdb01428emshdb0c451fba5f508p1128ecjsn6c790515de67"
 );
 
 xhr.send(data);

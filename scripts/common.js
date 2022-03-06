@@ -74,7 +74,7 @@ var contactusModal = `<div class="modal fade" id="contact-modal" tabindex="-1" a
 // ===================================================== make 2 header template for login and logout
 
 // add the header and the footer
-var bodyElement = document.getElementById("body");
+var bodyElement = document.getElementById("main");
 bodyElement.innerHTML = header + bodyElement.innerHTML + footer;
 bodyElement.innerHTML = bodyElement.innerHTML + loginModal + contactusModal;
 

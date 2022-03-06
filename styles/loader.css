@@ -1,19 +1,19 @@
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+#loader-div {
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 #loader {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  border: 12px solid #f3f3f3;
-  border-top: 12px solid #444444;
-  position: fixed;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #444444;
+  position: absolute;
   top: 40%;
-  left: 45%;
-
   animation: spin 1s linear infinite;
 }
 

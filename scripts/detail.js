@@ -96,7 +96,7 @@ function getHotelDetails() {
   xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
   xhr.setRequestHeader(
     "x-rapidapi-key",
-    "d32e5d3f47msh75c155f49e4e268p198859jsndb831324b05b"
+    "9fdb01428emshdb0c451fba5f508p1128ecjsn6c790515de67"
   );
 
   xhr.send(data);
@@ -113,6 +113,8 @@ function getHotelPhotos() {
 
       console.log(jsonData.data);
       parseHotelImages(jsonData.data);
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("main").style.display = "block";
     }
   });
 
@@ -123,7 +125,7 @@ function getHotelPhotos() {
   xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
   xhr.setRequestHeader(
     "x-rapidapi-key",
-    "d32e5d3f47msh75c155f49e4e268p198859jsndb831324b05b"
+    "9fdb01428emshdb0c451fba5f508p1128ecjsn6c790515de67"
   );
 
   xhr.send(data);
